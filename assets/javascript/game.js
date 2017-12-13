@@ -53,7 +53,15 @@ $( document ).ready(function() {
     wins++;
     $("#wins").html(wins);
     reset();
-  }
+    $("#randomNumber").html(randomNumber);
+    $("#total-score").html(totalScore);
+  } else if (totalScore > randomNumber) {
+    losses++;
+    $("#losses").html(losses);
+    reset();
+    $("#randomNumber").html(randomNumber);
+    $("#total-score").html(totalScore);
+  };
 
 
 
