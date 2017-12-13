@@ -2,9 +2,50 @@ header {
   text-align: center;
   background-color: #03c6a6;
   color: #ffffff;
-  padding: 30px;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
 }
 
 h3, h4 {
   text-align: center;
+  margin-bottom: 40px;
+}
+
+
+#random-number {
+  text-align: center;
+  font-size: 50px;
+  background-color: #f44292;
+  color: #ffffff;
+  padding: 30px;
+  margin-top: 10px;
+}
+
+#total-score {
+  text-align: center;
+  font-size: 50px;
+  background-color: #03c6a6;
+  color: #ffffff;
+  padding: 30px;
+  margin-top: 10px;
+}
+
+.score-box {
+  padding: 10px;
+  border: 1px solid #03c6a6;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.score-label {
+  text-align: center;
+  font-size: 30px;
+}
+
+.score {
+  text-align: center;
+  font-size: 30px;
 }
