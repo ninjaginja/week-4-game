@@ -30,39 +30,44 @@ $( document ).ready(function() {
   $("#crystals-black").on("click", function() {
     totalScore = totalScore + blackCrystal;
     $("#total-score").html(totalScore);
+    addScore();
+    console.log(totalScore);
   });
 
   $("#crystals-green").on("click", function() {
     totalScore = totalScore + greenCrystal;
     $("#total-score").html(totalScore);
+    addScore();
   });
 
   $("#crystals-purple").on("click", function() {
     totalScore = totalScore + purpleCrystal;
     $("#total-score").html(totalScore);
+    addScore();
   });
 
   $("#crystals-rainbow").on("click", function() {
     totalScore = totalScore + rainbowCrystal;
     $("#total-score").html(totalScore);
+    addScore();
   });
 
-  // If totalScore = randomNumber, increment wins and reset the game. If totalScore exceeds randomNumber, increment losses and reset the game.
-
-  if (totalScore === randomNumber) {
-    wins++;
-    $("#wins").html(wins);
-    reset();
-    $("#randomNumber").html(randomNumber);
-    $("#total-score").html(totalScore);
-  } else if (totalScore > randomNumber) {
-    losses++;
-    $("#losses").html(losses);
-    reset();
-    $("#randomNumber").html(randomNumber);
-    $("#total-score").html(totalScore);
+  // Create function to calculate if totalScore = randomNumber - increment wins and reset the game. If totalScore exceeds randomNumber, increment losses and reset the game.
+  var addScore = function () {
+    if (totalScore == randomNumber) {
+      wins++;
+      $("#wins").html(wins);
+      reset();
+      $("#random-number").html(randomNumber);
+      $("#total-score").html(totalScore);
+    } else if (totalScore > randomNumber) {
+      losses++;
+      $("#losses").html(losses);
+      reset();
+      $("#random-number").html(randomNumber);
+      $("#total-score").html(totalScore);
+    };
   };
-
 
 
 });

@@ -22,6 +22,8 @@ h3, h4 {
   color: #ffffff;
   padding: 30px;
   margin-top: 10px;
+  width: 150px;
+  height: 150px;
 }
 
 #total-score {
@@ -31,12 +33,15 @@ h3, h4 {
   color: #ffffff;
   padding: 30px;
   margin-top: 10px;
+  width: 150px;
+  height: 150px;
 }
 
 .score-box {
   padding: 10px;
   border: 1px solid #03c6a6;
-  width: 100%;
+  width: 150px;
+  height: 150px;
   margin-top: 20px;
 }
 
