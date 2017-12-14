@@ -9,12 +9,12 @@ $( document ).ready(function() {
   // Each crystal represents a number, number is hidden
   var blackCrystal = 6;
   var greenCrystal = 1;
-  var purpleCrystal = 28;
-  var rainbowCrystal = 13;
+  var purpleCrystal = 8;
+  var rainbowCrystal = 11;
 
   // Create function to generate a random number and insert in #random-number span
   var updateRandomNumber = function() {
-    randomNumber = Math.floor(Math.random() * 100) + 1;
+    randomNumber = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
     $("#random-number").html(randomNumber);
   };
 
